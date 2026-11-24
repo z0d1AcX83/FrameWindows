@@ -47,7 +47,7 @@ struct StateBackup {
     GameObject* lastPortal1;
     GameObject* lastPortal2;
 
-    static StateBackup capture(GJGameState const& state) {
+    static StateBackup capture(GJGameState& state) {
         return {
             state.m_middleGroundOffsetY,
             state.m_portalY,
